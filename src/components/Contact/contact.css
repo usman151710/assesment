@@ -34,8 +34,9 @@
     border-radius: 10px;
     background-color: #fff;
     padding: 20px 16px;
-    margin: 10px;
     flex: 1;
+    max-width: 50%;
+    margin: 10px;
 }
 
 .contact-form label {
@@ -95,8 +96,11 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    .contact-details,
-    .contact-form {
+    .contact-details {
         width: 100%;
+    }
+
+    .contact-form {
+        max-width: 100%;
     }
 }
