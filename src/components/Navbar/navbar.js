@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { FaHome, FaSearch, FaWindowClose, FaSortDown } from 'react-icons/fa';
+import { FaHome, FaSearch, FaSortDown, FaRegWindowClose } from 'react-icons/fa';
 
 const items = [
     {
@@ -56,7 +56,7 @@ export const Navbar = () => {
                 <div className="menu-toggle" onClick={toggleMenu}>
                     {showMenu ? (
                         <div>
-                            <FaWindowClose />
+                            <FaRegWindowClose />
                         </div>
                     ) : (
                         <>
