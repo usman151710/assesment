@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(28, 28, 28, 1);
+    color: white;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: solid;
+}
+
+.nav-action {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: gray;
+    padding: 0px 8px;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.nav-head {
+    border: 1px solid yellow;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-align: left;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(28, 28, 28, 1);
+    padding: 20px 12px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.content h2,
+.content p {
+    text-align: left;
+}
+
+
+.products {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    margin-inline: 8px;
+}
+
+.product-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-card p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.contact-details {
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.contact-details h2 {
+    text-decoration: underline;
+}
+
+.contact-details div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-details h2,
+.contact-details h3,
+.contact-details p {
+    text-align: left;
+}
+
+.contact-form {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 16px;
+    flex: 1;
+    max-width: 50%;
+    margin: 10px;
+}
+
+.contact-form label {
+    text-align: left;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.checkbox-text {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label,
+input:not([type="checkbox"]),
+textarea {
+    display: block;
+    margin-bottom: 6px;
+    width: 95%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: rgba(28, 28, 28, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005baa;
+}
+
+.footer {
+    background-color: rgba(28, 28, 28, 1);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 10px;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: gray;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-action {
+        display: flex;
+        align-self: center;
+        margin: 10px 20px;
+    }
+
+    .show {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .content,
+    .products {
+        flex: 1;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .product-card {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .contact-details {
+        width: 100%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
